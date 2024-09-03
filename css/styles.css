@@ -49,8 +49,8 @@ footer {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 2000px;
+  position: sticky;
   margin: auto;
 }
 
