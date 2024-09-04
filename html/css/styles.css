@@ -178,6 +178,10 @@ footer {
     /* 39px - 61px */
     font-size: clamp(2.438rem, 5vw, 3.813rem);
   }
+  #hero-1946 .cs-subtitle {
+    /* 39px - 61px */
+    font-size: clamp(1.438rem, 5vw, 2.813rem);
+  }
   #hero-1946 .cs-text {
     margin-bottom: 1.25rem;
   }
