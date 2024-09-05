@@ -170,7 +170,24 @@ footer {
     position: relative;
     z-index: 1;
   }
+  #hero-1946 .cs-bodycontent {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    /* 40px - 52px */
+    margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
   #hero-1946 .cs-flex {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #hero-1946 .cs-bodyflex {
     /* prevents flexbox from squishing it */
     flex: none;
   }
@@ -179,6 +196,9 @@ footer {
     font-size: clamp(2.438rem, 5vw, 3.813rem);
   }
   #hero-1946 .cs-text {
+    margin-bottom: 1.25rem;
+  }
+  #hero-1946 .cs-bodytext {
     margin-bottom: 1.25rem;
   }
   #hero-1946 .cs-button-solid {
@@ -231,6 +251,8 @@ footer {
     grid-template-columns: repeat(12, 1fr);
     /* 16px - 20px */
     gap: clamp(1rem, 2vw, 1.25rem);
+    position: relative;
+    top: -200 px;
   }
   #hero-1946 .cs-item {
     text-align: center;
@@ -306,6 +328,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  #hero-1946 .cs-bodycontent {
+    display: flex;
+    flex-direction: column;
+  }
   #hero-1946 .cs-title {
     max-width: 46.875rem;
   }
@@ -328,9 +354,20 @@ footer {
     flex-direction: row;
     align-items: flex-start;
   }
+  #hero-1946 .cs-bodycontent {
+    text-align: left;
+    max-width: 80rem;
+    gap: 1.25rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
   #hero-1946 .cs-flex {
     width: 50%;
     max-width: 39.375rem;
+  }
+  #hero-1946 .cs-bodyflex {
+    width: 100%;
+    max-width: 80rem;
   }
 }
 
@@ -390,6 +427,15 @@ body {
     text-align: inherit;
     width: 100%;
     max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+.cs-bodytext {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 80rem;
     margin: 0;
     color: var(--bodyTextColor);
 }
