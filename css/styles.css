@@ -466,7 +466,7 @@ body {
 .column {
   flex: 50%;
   padding: 10px;
-  height: 3000px; /* Should be removed. Only for demonstration */
+  height: 1000px; /* Should be removed. Only for demonstration */
   width: 50%;
 }
                             
