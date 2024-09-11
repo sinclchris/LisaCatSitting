@@ -294,7 +294,9 @@ footer {
     margin-right: auto;
     position: relative;
     border-radius: 25px;
+    
   }
+
   #hero-1946 .cs-icon {
     width: 2.5rem;
     height: auto;
@@ -387,6 +389,16 @@ footer {
     width: 100%;
     max-width: 80rem;
   }
+  .row {
+  display: flex;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+  flex: 1;
+  padding: 10px;
+  width: 50%;
+  }
 }
 
 :root {
@@ -457,17 +469,6 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
-.row {
-  display: flex;
-  width: 100%;
-}
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 10px;
-  height: 1000px; /* Should be removed. Only for demonstration */
-  width: 50%;
-}
                             
                                 
