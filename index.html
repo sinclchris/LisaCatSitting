@@ -20,7 +20,7 @@
                 </picture>
                 <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
-                    <a href="html/about.html">
+                    <a href="#about-us">
                     <h3 class="cs-h3">About us</h3>
                     </a>
                     <p class="cs-item-text">Learn a little more about what we offer</p> 
@@ -34,7 +34,7 @@
                 </picture>
                 <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
-		    <a href="html/contact.html">
+		    <a href="#contact-us">
                     <h3 class="cs-h3">Contact us</h3>
 	            </a>
                     <p class="cs-item-text">Have any questions or need to contact us for any reason?</p>
@@ -47,8 +47,8 @@
                 </picture>
                 <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
-		    <a href="html/fill out a form.html">
-                    <h3 class="cs-h3">Fill out a form</h3>
+		    <a href="#how-we-work">
+                    <h3 class="cs-h3">How we work</h3>
 		    </a>
                     <p class="cs-item-text">Fill out a form to get started</p>		    
                 </div>
@@ -60,7 +60,7 @@
                 </picture>
                 <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
-		    <a href="html/petpics.html">
+		    <a href="#pet-pics">
                     <h3 class="cs-h3">Pet Pics</h3>
 		    </a>
                     <p class="cs-item-text">Happy Customers</p>
@@ -72,7 +72,7 @@
 
 <section id="hero-1946">
 
-    <div class="cs-container">
+    <div id="start" class="cs-container">
         <div class="cs-content">
             <h2 class="cs-title">Lisa's Cat Sitting</h2>
             <div class="cs-flex">
@@ -81,7 +81,7 @@
                 Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured as cat parents that when we go away our cats are going to be well looked after.
 
                 </p>
-                <a href="" class="cs-button-solid">Book a sitting</a>
+                <a href="#fill-out-a-form" class="cs-button-solid">Book a sitting</a>
             </div>
         </div>
 
@@ -123,23 +123,15 @@
         <!-- /picture -->
             
 
-        <div class="cs-bodycontent">
-	<div class="cs-bodyflex">
-                <p class="cs-bodytext">Daily home cat sitting service, caring for your cats while you are away.
-                Covering Dereham and surrounding area.
-                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured as cat parents that when we go away our cats are going to be well looked after.
-Daily home cat sitting service, caring for your cats while you are away.
-                Covering Dereham and surrounding area.
-                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured as cat parents that when we go away our cats are going to be well looked after.
 
-Daily home cat sitting service, caring for your cats while you are away.
-                Covering Dereham and surrounding area.
-                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured as cat parents that when we go away our cats are going to be well looked after.
+<!-- ============================================ -->
+<!--                     About Us                     -->
+<!-- ============================================ -->
 
-
-                </p>    
-	</div>
-	</div>
+<div id="about-us" class="cs-container">
+<h2 class="cs-subtitle">
+About us
+</h2>
 
 <div class="row">
   <div class="column">
@@ -173,17 +165,156 @@ Daily home cat sitting service, caring for your cats while you are away.
                 </p> 
   </div>
 </div>
+</div>
 
-<form method="post" name="contact_form"
-    action="contact-form-handler.php">
-        Your Name:
-        <input type="text" name="name">
-        Email Address:
-        <input type="text" name="email">
-        Message:
-        <textarea name="message"></textarea>
-        <input type="submit" value="Submit">
+<!-- ============================================ -->
+<!--                     Contact us                     -->
+<!-- ============================================ -->
+
+<div id="contact-us" class="cs-container">
+<h2 class="cs-subtitle">
+Contact us
+</h2>
+
+<div class="row">
+  <div class="column" >
+   <div class="smooth-box">
+
+   <form method="post" name="contact_form" action="contact-form-handler.php" id="contactform">
+        <p>
+	Reach out to us to arrange a booking here!
+	</p>
+	<div class="cs-form-group">
+        	<input type="text" class="cs-form-control" placeholder="Your Name">
+	</div>
+	<div class="cs-form-group">
+        	<input type="text" class="cs-form-control" placeholder="Your Email">
+	</div>
+	<div class="cs-form-group">
+        	<input type="text" class="cs-form-control" placeholder="Your Message" rows="5">
+	</div>
+	<div class="cs-form-group">
+        	<input type="checkbox" class="cs-form-control" id="vehicle1" name="vehicle1" value="Bike">
+        	<label for="vehicle1"> I have a bike</label><br>
+        	<input type="checkbox" class="cs-form-control" id="vehicle2" name="vehicle2" value="Car">
+        	<label for="vehicle2"> I have a car</label><br>
+	</div>        
+	<div class="cs-form-group">
+        	<input type="submit" value="Submit">
+	</div
+        
+        
     </form>
+    </div>
+  </div>
+  <div class="column">
+    <picture class="cs-column-picture">
+    <img decoding="async" src="Resources/dog_smile.jpg" width="300" height="300" style="margin: auto; display: block">
+    </picture>
+    <h2 class="cs-h2">Millie</h2>
+    		<p class="cs-bodytext">
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+                </p> 
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- ============================================ -->
+<!--                     how-we-work          -->
+<!-- ============================================ -->
+
+
+<div id="how-we-work" class="cs-container">
+<h2 class="cs-subtitle">
+How we work
+</h2>
+
+<div class="row">
+  <div class="column">
+    <picture class="cs-column-picture">
+    <img decoding="async" src="Resources/dog_smile.jpg" width="300" height="300" style="margin: auto; display: block">
+    </picture>
+    <h2 class="cs-h2"> Lisa </h2>
+    <div class="cs-bodyflex">
+                <p class="cs-bodytext">
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+                </p>    
+	</div>
+  </div>
+  <div class="column">
+    <picture class="cs-column-picture">
+    <img decoding="async" src="Resources/dog_smile.jpg" width="300" height="300" style="margin: auto; display: block">
+    </picture>
+    <h2 class="cs-h2">Millie</h2>
+    		<p class="cs-bodytext">
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+                </p> 
+  </div>
+</div>
+</div>
+
+<!-- ============================================ -->
+<!--                     Pet Pics                 -->
+<!-- ============================================ -->
+
+
+<div id="pet-pics" class="cs-container">
+<h2 class="cs-subtitle">
+Pet pics
+</h2>
+
+<div class="row">
+  <div class="column">
+    <picture class="cs-column-picture">
+    <img decoding="async" src="Resources/dog_smile.jpg" width="300" height="300" style="margin: auto; display: block">
+    </picture>
+    <h2 class="cs-h2"> Lisa </h2>
+    <div class="cs-bodyflex">
+                <p class="cs-bodytext">
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+                </p>    
+	</div>
+  </div>
+  <div class="column">
+    <picture class="cs-column-picture">
+    <img decoding="async" src="Resources/dog_smile.jpg" width="300" height="300" style="margin: auto; display: block">
+    </picture>
+    <h2 class="cs-h2">Millie</h2>
+    		<p class="cs-bodytext">
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+		Daily home cat sitting service, caring for your cats while you are away.
+                Covering Dereham and surrounding area.
+                Whether you need help as a one off, regular occasions or you are going off on holiday we all want to be assured 		as cat parents that when we go away our cats are going to be well looked after.
+                </p> 
+  </div>
+</div>
+</div>
 
 <script src="js/scripts.js"></script>
 </section>

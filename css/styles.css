@@ -195,6 +195,10 @@ footer {
     /* 39px - 61px */
     font-size: clamp(2.438rem, 5vw, 3.813rem);
   }
+  #hero-1946 .cs-subtitle {
+    /* 39px - 61px */
+    font-size: clamp(1.438rem, 4vw, 2.813rem);
+  }
   #hero-1946 .cs-text {
     margin-bottom: 1.25rem;
   }
@@ -469,6 +473,35 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
+.cs-form-group {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 13px;
+    margin-bottom: 27px;
+  }
+.cs-form-control {
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    background: 0 0;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: #333;
+    line-height: 1.2;
+    padding: 0 5px;  
+  }
+.smooth-box {
+    max-width: 750px;
+    border-radius: 15px;
+    box-shadow: 0px 35px 75px -30px rgba(50, 50, 93, 0.25);
+    background-color: #fff;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
 
-                            
+                           
                                 
