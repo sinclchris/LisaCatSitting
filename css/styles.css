@@ -440,6 +440,7 @@ footer {
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
+    --tagFontSize: 1.9rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(1rem, 7.82vw, 2rem) 1rem 1rem;
 }
@@ -491,7 +492,14 @@ body {
     text-align: center;
     width: 100%;
     max-width: 80rem;
-    margin: 0;
+    color: var(--bodyTextColor);
+}
+.cs-tagtext {
+    font-size: var(--tagFontSize);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
     color: var(--bodyTextColor);
 }
 .cs-form-group {
@@ -541,6 +549,30 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+/* relevant styles */
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(246, 221, 234, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
