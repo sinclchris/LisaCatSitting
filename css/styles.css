@@ -347,9 +347,9 @@ footer {
     font-size: 1.25rem;
   }
   #hero-1946 .cs-item {
-    text-align: left;
+    text-align: center;
     margin: 0;
-    align-items: flex-start;
+    align-items: center;
     grid-column: span 6;
   }
   .row {
