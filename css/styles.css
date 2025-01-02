@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+	
 }
 
 header {
-    background-color: #333;
+    background-color: #3334;
     color: #fff;
     padding: 10px 0;
 }
@@ -127,12 +128,78 @@ footer {
   to {opacity: 1}
 }
 
+.rowpp {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnpp {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnpp img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* relevant styles */
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(246, 221, 234, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnpp {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnpp {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
-
 /* Mobile ------------------------------------ 360px */
 @media only screen and (min-width: 0rem) {
+	.headercolumn {
+	flex: 50%;
+	}
   #hero-1946 {
     padding: var(--sectionPadding);
     /* 160px - 200px */
@@ -213,6 +280,7 @@ footer {
     /* 39px - 61px */
     font-size: clamp(2.438rem, 5vw, 3.813rem);
   }
+  
   #hero-1946 .cs-subtitle {
     /* 39px - 61px */
     font-size: clamp(1.438rem, 4vw, 2.813rem);
@@ -243,6 +311,10 @@ footer {
     z-index: 1;
     transition: color 0.3s;
     transition: background-color 0.3s;
+  }
+  #hero-1946 .cs-button-subtext {
+    /* 39px - 61px */
+    font-size: 0.8rem;
   }
   #hero-1946 .cs-button-solid:hover {
     background-color: #000;
@@ -328,7 +400,13 @@ footer {
   }
 
   #hero-1946 .cs-icon {
-    width: 1.5rem;
+    width: 3rem;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+  }
+  #hero-1946 .cs-headericon {
+    width: 9rem;
     height: auto;
     display: block;
     transition: transform 0.5s;
@@ -351,9 +429,25 @@ footer {
     color: var(--headerColor);
     transition: color 0.3s;
   }
+  
+@media only screen and (max-width: 48rem) { 
   #hero-1946 .cs-item-text {
     /* 14px - 16px */
-    display: none;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+	display: none; 
+  }
+} 
+  #hero-1946 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
   #hero-1946 .cs-item-text2 {
     /* 14px - 16px */
@@ -364,10 +458,31 @@ footer {
     color: var(--bodyTextColor);
 	display: block;
   }
+  #hero-1946 .rowcontact {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0 px;
+  justify-content: center;
+}
+
+  #hero-1946 .columncontact {
+  flex: 50%;
+  /*max-width: 50%;*/
+  padding: 0 clamp(2rem, 4vw, 3rem);
+  justify-content: center;
+  text-align: center;
+  }
   }
 }
 /* Tablet --------------------------------------------------------- 768px */
 @media only screen and (min-width: 48rem) {
+	
+  #hero-1946 .columncontact {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 clamp(2rem, 4vw, 3rem);
+  justify-content: center;
+  }
   #hero-1946 .cs-text {
     font-size: 1.25rem;
   }
@@ -582,81 +697,12 @@ body {
     max-width: 750px;
     border-radius: 15px;
     box-shadow: 0px 35px 75px -30px rgba(50, 50, 93, 0.25);
-    background-color: #fff;
+    background-color: #d5f0c5;
     border: 1px;
     border-color: black;
     border-style: solid;
 }
 
-.rowpp {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-/* Create four equal columns that sits next to each other */
-.columnpp {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.rowcontact {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 0 px;
-}
-
-.columncontact {
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 clamp(2rem, 4vw, 3rem);
-  }
-
-.columnpp img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-/* relevant styles */
-.img__wrap {
-  position: relative;
-}
-
-.img__description {
-  position: absolute;
-  
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(246, 221, 234, 0.8);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 0.8;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .columnpp {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columnpp {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
                            
                                 
