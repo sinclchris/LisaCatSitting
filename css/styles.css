@@ -291,6 +291,9 @@ a {
   #hero-1946 .cs-bodytext {
     margin-bottom: 1.25rem;
   }
+  #hero-1946 .cs-bodytextlist {
+    margin-bottom: 1.25rem;
+  }
   #hero-1946 .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
@@ -661,6 +664,14 @@ body {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    color: var(--bodyTextColor);
+}
+.cs-bodytextlist {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
     width: 100%;
     max-width: 80rem;
     color: var(--bodyTextColor);
