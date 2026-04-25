@@ -28,5 +28,13 @@
   prev && prev.addEventListener('click', ()=> show(idx-1));
   next && next.addEventListener('click', ()=> show(idx+1));
   dots.forEach((d,k)=> d.addEventListener('click', ()=> show(k)));
+
+  var touchStartX = 0;
+  slider.addEventListener('touchstart', function(e){ touchStartX = e.touches[0].clientX; }, {passive:true});
+  slider.addEventListener('touchend', function(e){
+    var delta = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(delta) > 50) show(delta < 0 ? idx+1 : idx-1);
+  }, {passive:true});
+
   show(0);
 })();
